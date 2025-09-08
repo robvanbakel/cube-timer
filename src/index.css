@@ -12,6 +12,6 @@
 
 @layer base {
   body {
-    @apply bg-bg text-text font-sans min-h-screen;
+    @apply bg-bg text-text font-sans h-dvh;
   }
 }

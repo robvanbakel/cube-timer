@@ -267,7 +267,7 @@ export default function App() {
   }, [solves]);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-dvh flex flex-col">
       <header className="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-bg-elev">
         <h1 className="text-lg font-semibold">Rubik's Cube Timer</h1>
         <div className="flex items-center gap-2">
@@ -297,7 +297,7 @@ export default function App() {
 
       <main
         ref={mainRef}
-        className="grid md:grid-cols-[minmax(0,1fr)_320px] md:grid-rows-[auto_1fr] gap-6 p-6 flex-1 min-h-0 min-w-0 relative"
+        className="grid md:grid-cols-[minmax(0,1fr)_320px] md:grid-rows-[auto_minmax(460px,1fr)] gap-6 p-6 flex-1 min-h-0 min-w-0 relative overflow-hidden"
         style={isMd ? { gridTemplateColumns: `minmax(0,1fr) ${rightWidth}px` } : undefined}
       >
         <section className="grid gap-4 items-center justify-items-center bg-gradient-to-b from-[rgba(79,140,255,0.06)] to-[rgba(45,212,191,0.04)] border border-slate-800 rounded-2xl p-6 min-w-0">

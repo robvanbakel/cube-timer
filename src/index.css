@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0f1218;
+  --color-bg-elev: #171c24;
+  --color-text: #e7ecf3;
+  --color-muted: #9aa7b8;
+  --color-accent: #4f8cff;
+  --color-accent-2: #2dd4bf;
+  --color-danger: #ff6b6b;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans min-h-screen;
+  }
+}

@@ -267,7 +267,7 @@ export default function App() {
   }, [solves]);
 
   return (
-    <div className="h-dvh flex flex-col">
+    <div className="md:h-dvh flex flex-col">
       <header className="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-bg-elev">
         <h1 className="text-lg font-semibold">Rubik's Cube Timer</h1>
         <div className="flex items-center gap-2">

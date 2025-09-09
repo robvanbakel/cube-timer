@@ -13,7 +13,7 @@ export function SolvesList({
   removeSolve: (idx: number) => void;
 }) {
   return (
-    <section className="bg-bg-elev border border-slate-800 rounded-2xl p-4 md:col-start-2 md:row-start-2 flex flex-col h-full min-h-0 min-w-0 overflow-hidden">
+    <section className="bg-bg-elev border max-md:order-last border-slate-800 rounded-2xl p-4 md:col-start-2 md:row-start-2 flex flex-col h-full min-h-0 min-w-0 overflow-hidden">
       <h2 className="mt-1 mb-3 text-base text-muted">Solves</h2>
       <ol className="m-0 p-0 list-none min-h-0 overflow-auto grow" style={{ scrollbarGutter: "stable" }}>
         {solves.map((s, i) => {
